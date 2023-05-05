@@ -29,7 +29,7 @@ print_hello = PythonOperator(
 
 trigger = TriggerDagRunOperator(
     task_id='trigger_example_dag',
-    trigger_dag_id='HelloWorld'
+    trigger_dag_id='HelloWorld',
     dag = dag
 )
 
